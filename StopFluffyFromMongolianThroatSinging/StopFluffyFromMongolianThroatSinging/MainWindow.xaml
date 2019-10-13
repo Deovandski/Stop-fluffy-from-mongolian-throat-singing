@@ -28,10 +28,12 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <Button x:Name="btnViewRecordings" Content="View Recordings" HorizontalAlignment="Center" Margin="0,0,0,0" Padding="5,5,5,5" Grid.Row="1" VerticalAlignment="Center" Height="47" FontSize="20" IsEnabled="False"/>
+        <Button x:Name="btnViewRecordings" Content="View Recordings" HorizontalAlignment="Center" Margin="0,0,0,0" Padding="5,5,5,5" Grid.Row="1" VerticalAlignment="Center" Height="47" FontSize="20" IsEnabled="False" Click="btnViewRecordings_Click"/>
 
         <Button x:Name="btnMonitorTrigger" Content="Start Monitoring" Grid.Column="2" HorizontalAlignment="Center" Margin="0,0,0,0" Padding="5,5,5,5" Grid.Row="1" VerticalAlignment="Center" Height="47" FontSize="20" IsEnabled="False"/>
-        <TextBlock x:Name="txtOutput" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" Text="Awaiting App Init..." TextWrapping="Wrap" VerticalAlignment="Stretch" Background="Black" Foreground="#FF00E8FF"/>
 
+        <ScrollViewer x:Name="svOutput" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <TextBlock x:Name="txtOutput" Text="Awaiting App Init..." Background="Black" Foreground="#FF00E8FF"/>
+        </ScrollViewer>
     </Grid>
 </Window>
