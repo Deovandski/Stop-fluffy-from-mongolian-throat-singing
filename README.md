@@ -1,5 +1,5 @@
 # Monitor Fluffy
-![](Resources/App.png)
+![](Resources/App.PNG)
 
 A "complex" software designed to record audio and play sounds at a random interval to prevent Fluffy from bothering the neighbors when she is by herself.
 
