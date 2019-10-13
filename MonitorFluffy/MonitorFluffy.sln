@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitorFluffy", "MonitorFluffy\MonitorFluffy.csproj", "{5BB4037A-CEDA-4100-A363-3E75502305DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitorFluffy", "MonitorFluffy\MonitorFluffy.csproj", "{5BB4037A-CEDA-4100-A363-3E75502305DC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MonitorFluffyMSI", "MonitorFluffyMSI\MonitorFluffyMSI.vdproj", "{F19C7E64-3862-4CEE-9218-DCE3C0F805FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{5BB4037A-CEDA-4100-A363-3E75502305DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BB4037A-CEDA-4100-A363-3E75502305DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BB4037A-CEDA-4100-A363-3E75502305DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19C7E64-3862-4CEE-9218-DCE3C0F805FF}.Debug|Any CPU.ActiveCfg = Debug
+		{F19C7E64-3862-4CEE-9218-DCE3C0F805FF}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
