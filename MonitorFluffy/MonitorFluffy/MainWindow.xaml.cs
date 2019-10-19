@@ -139,7 +139,7 @@ namespace MonitorFluffy
             while (isMonitoring)
             {
                 // Setup next Monitor Session
-                DateTime startTime = DateTime.Now.Add(new TimeSpan(0, new Random().Next(9, 19), 0));
+                DateTime startTime = DateTime.Now.Add(new TimeSpan(0, new Random().Next(4, 25), 0));
                 this.Dispatcher.Invoke(() => txtOutput.Text += Environment.NewLine + "----------------");
 
                 // The +1 is to trigger the initial text output
@@ -152,6 +152,7 @@ namespace MonitorFluffy
                     if (minutesDiff != minutesDiff_new)
                     {
                         this.Dispatcher.Invoke(() => txtOutput.Text += Environment.NewLine + $"Monitor Session #{currentMonitorSession} begins in {minutesDiff} Minutes");
+                        this.Dispatcher.Invoke(() => svOutput.ScrollToVerticalOffset(10));
                         minutesDiff = minutesDiff_new;
                     }
                 }
@@ -191,6 +192,7 @@ namespace MonitorFluffy
                 this.Dispatcher.Invoke(() => txtOutput.Text += Environment.NewLine + "-------------------------");
                 deologger.StopLog();
                 ++currentMonitorSession;
+                this.Dispatcher.Invoke(() => svOutput.ScrollToVerticalOffset(10));
             }
             this.Dispatcher.Invoke(() => txtOutput.Text += Environment.NewLine + "Monitoring has ended.");
         }

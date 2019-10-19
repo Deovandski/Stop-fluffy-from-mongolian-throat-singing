@@ -6,6 +6,7 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon>App.ico</ApplicationIcon>
     <StartupObject>MonitorFluffy.App</StartupObject>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
